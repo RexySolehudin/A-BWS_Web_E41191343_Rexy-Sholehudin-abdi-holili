@@ -15,5 +15,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('user','ManagementUserController'); 
+Route::resource('user','ManagementUserController');
+Route::get("/home", function(){
+    return view("home");
+});
+
 
