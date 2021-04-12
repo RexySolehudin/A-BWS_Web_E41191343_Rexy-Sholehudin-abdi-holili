@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use DB;
 use Illuminate\Database\Seeder;
 
 class DetailProfileSeeder extends Seeder
@@ -13,11 +13,12 @@ class DetailProfileSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('detail_profile')->insert([
-            'address' => 'Bondowoso',
-            'nomor_tlp' => '08xxxxxxx',
-            'ttl' => '2000-11-01',
-            'foto' => 'picture.jpg',
-        ]);
+      //
+      DB::table('detail_profile')->insert([
+        'address' => 'bondowoso',
+        'nomor_tlp' => '082xxx',
+        'ttl' => '2008-10-10',
+        'foto' => 'picture.jpg'
+    ]);
     }
 }
